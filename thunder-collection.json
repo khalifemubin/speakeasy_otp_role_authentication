@@ -1,0 +1,147 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "design5",
+    "dateExported": "2024-01-19T15:24:29.359Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "786fc680-041f-4ca3-9f28-c7c985e30381",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "register",
+            "url": "http://localhost:3000/api/user/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-19T12:34:47.328Z",
+            "modified": "2024-01-19T14:49:42.100Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"jason\",\n  \"password\":\"test@123\",\n  \"claims\":\"[\\\"read\\\"]\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c61c7d28-9856-4ef2-a152-f109fb77590f",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "generateOtp",
+            "url": "http://localhost:3000/api/otp/generate-otp",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-01-19T12:52:46.866Z",
+            "modified": "2024-01-19T13:26:42.128Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhYTcwM2EwNGUxMWQ4MWYzNmYxZThlIn0sImlhdCI6MTcwNTY3MDc4MH0.aw_wMnh5394IkwMGSqyAeaTImSWA63n66LSZRMorj5g"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "88bb6282-0958-4b13-aea4-6729df87b5b7",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "verifyOtp",
+            "url": "http://localhost:3000/api/otp/verify-otp",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-01-19T13:29:37.110Z",
+            "modified": "2024-01-19T14:23:06.844Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhYTcwM2EwNGUxMWQ4MWYzNmYxZThlIn0sImlhdCI6MTcwNTY3MDc4MH0.aw_wMnh5394IkwMGSqyAeaTImSWA63n66LSZRMorj5g"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"token\":\"960555\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "071740c9-e0d2-4d74-8a06-d8ba867da697",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "simulate Token",
+            "url": "http://localhost:3000/api/otp/simulate-token",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-01-19T14:21:52.976Z",
+            "modified": "2024-01-19T14:23:00.791Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhYTcwM2EwNGUxMWQ4MWYzNmYxZThlIn0sImlhdCI6MTcwNTY3MDc4MH0.aw_wMnh5394IkwMGSqyAeaTImSWA63n66LSZRMorj5g"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "21589525-aeee-42f0-a14e-3cbfd6fff17f",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/api/user/login",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-01-19T14:49:59.226Z",
+            "modified": "2024-01-19T14:50:34.523Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"jason\",\n  \"password\":\"test@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "665bc36d-8453-409b-9f12-a9feb5bce06f",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "writePermission",
+            "url": "http://localhost:3000/write_protected_endpoint",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-01-19T14:51:07.006Z",
+            "modified": "2024-01-19T14:51:49.046Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhYThjMDZlNGFlNWY3OTEzMWNhNDA4In0sImlhdCI6MTcwNTY3NTgzNH0.2aSMYdhGIIdbR_gBE6mKnT_XFUPktp09d-9unXltFt8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "25d1b7b1-3667-4165-a8b2-9c427c30d035",
+            "colId": "241407f8-6e5b-40d1-bb4a-dda443da98a3",
+            "containerId": "",
+            "name": "readPermission",
+            "url": "http://localhost:3000/api/permissions/read_protected_endpoint",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-01-19T14:52:12.074Z",
+            "modified": "2024-01-19T15:00:14.092Z",
+            "headers": [
+                {
+                    "name": "x-auth-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjVhYThjMDZlNGFlNWY3OTEzMWNhNDA4In0sImlhdCI6MTcwNTY3NTgzNH0.2aSMYdhGIIdbR_gBE6mKnT_XFUPktp09d-9unXltFt8"
+                }
+            ],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
